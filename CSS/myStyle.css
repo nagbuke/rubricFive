@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+ #kitten1 {
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+		border-radius: 100px;
+	 z-index: 0;
+	 float: left;
+	 
+}
+
+form {
+	width: 150px;
+	height: 158px;
+}
+
+form #button1 {
+	background-color: transparent;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+		border-radius: 100px;
+	border-color: transparent;
+	 z-index: 1;
+	width: 150px;
+	height: 158px;
+	margin-top: 0px;
+	margin-right: -150px;
+	margin-bottom: -150px;
+	margin-left: -150px;
+	top: 0;
+	
+	
+}
+
+form .textStyle1 {
+	background-color: #FFF;
+    text-decoration: underline;
+    padding-top: 75px;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.125em;
+	font-weight: bold;
+}
+
+#headerIMG {
+	width: 150px;
+}
+
+#adoptInfo {
+	width: 85%;
+	margin-top: -150px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: -150px;
+	top: 0;
+	z-index: 1;
+	float: right;
+	
+}
