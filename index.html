@@ -2,50 +2,67 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<!--------------------------CSS-------------------------->
-<link href="CSS/myStyle.css" type="text/css" rel="stylesheet"/>
-<!--------------------------JavaScript-------------------------->
-<script src="JS/myScript.js" type="text/javascript" ></script>
-<title>Rubric 5 | Norie Agbuke</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!---- CSS ----------------------------------->
+	<link href="css/mainStyle.css" rel="stylesheet" type="text/css"/>
+	
+	<!---- JQuery UI ----------------------------------->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+	
+	<!-----AJAX------------------------------------------>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+<title>Norie's Rubric 6 Site</title>
 </head>
-	
-<!----Event Handlers: onLoad, onUnload--->
-<body onLoad="alert('Yay, you made it!'); checkCookie();" onUnload="alert('Are you sure you want to leave the page?');">
 
-	<header>
-		<div id="headerIMG">
-	<img src="IMG/myKitten.jpg" alt="Precious Little Kitten" width="150px" height="158"  id="kitten1" />
-	<form>
-		<!----Event Handlers: onClick, onMouseOut--->
-		<input type="button" value="Click me" class="textStyle1" id="button1" onClick="alert('I am cute now'); alert('but one day I will destroy your favorite sweater.');" onMouseOut="alert('Adopt me today!');"/>
-	</form>
+<body>
+	<div id="container">
+		
+		<header class="header">
+			<h1>Rubric 6 </h1>
+			
+			<div id="contrastMode">1</div>
+		</header>
+		
+		
+	<div id="content">
+		<div id="rightSide">
+		<button id="btn" class="btn">Click! Click! Click!</button>
+		<section id="doc1">
+			<h2 id="title" class="title">Click the objects to see what happens</h2>
+			<div id="" class="icons">2</div>
+			<p id="p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo pharetra sem, vitae elementum eros tristique quis. Donec porta, sapien a pellentesque consectetur, sapien nunc elementum leo, in semper quam orci ut neque. Aenean quis lectus ultricies, hendrerit arcu at, faucibus erat. Nam eget sodales libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus malesuada arcu scelerisque mi facilisis feugiat. Mauris semper velit et nunc pulvinar varius. In vel bibendum metus. Sed ac tellus libero. Suspendisse vitae tortor eget libero tempus tincidunt a sit amet justo. Aenean feugiat et sapien sed rhoncus. Suspendisse ut tortor a quam rutrum eleifend. Proin viverra, enim ac sodales venenatis, nisi lorem placerat enim, at malesuada nulla felis dictum mi. <br>
+			  <br>
+		  </p>
+		</section>
+		<section id="doc2">
+			
+		  <div id="one">3</div>
+			
+		</section>
+		<section id="doc3">
+			<div id="two">4</div>
+		</section>
+		<section id="doc4">
+			<div id="three">5</div>
+		</section>
+		</div>
+		
+		<footer id="bottom">
+			<input type="button" value="6" id="button" class="button"/>
+			<div id="loadPage"></div>
+		</footer>
+		</div>
 	</div>
 	
-	<div id="adoptInfo">
-	<h1>Adopting your special friend is a lifetime commitment. </h1>
-		<h2>Click on the kitten to learn more.</h2>
-	</div>
-	</header>
-	
-	<section>
-		<p>
-			<input id="p1">
-		</p>
-		
-		<p></p>
-
-		
-	</section>
-	
-	<footer>
-		<!----Event Handler: onMouseOver--->
-		Brought to you by the <a href="https://www.aspca.org" onMouseOver="alert('Save all the kitties!');">ASPCA</a>
-	<span></span>
-	</footer>
 	
 	
+	<!---- JavaScript: my functions ----------------------------------->
+	<script src="js/mainScript.js" type="text/javascript">
+</script>
 	
-	
+	<script src="js/ajax.js" type="text/javascript"></script>
 	
 </body>
 </html>
