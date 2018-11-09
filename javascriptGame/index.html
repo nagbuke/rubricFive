@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic'
+	rel='stylesheet' type='text/css' />
+
+<title>GAMEs by JavaScript<title>
+
+</head>
+
+<body >
+  <center>
+  <form name=pad>
+  <table border=2 cellpadding=2 cellspacing=2>
+  <tr>
+  <td colspan=4 align=center>Shift It 4x4 Game</td>
+  </tr>
+
+  <SCRIPT LANGUAGE="JavaScript">
+
+  <!-- Original:  Dion  -->
+  <!-- Web Site:  http://members.xoom.com/yoboseyo -->
+
+
+
+  <!-- Begin
+  bx=3; by=3;
+  for (y=0;y<4;y++) {
+  document.write('<tr>');
+  for (x=0;x<4;x++) {
+  document.write('<td><tt><input type=button value="   " ');
+  document.write('onclick="move('+x+','+y+');"></tt></td>');
+  }
+  document.write('</tr>');
+  }
+  function move(x,y) {
+  ax=Math.abs(bx-x);
+  ay=Math.abs(by-y);
+  if (((ax*ay)==0)&&((ax+ay)==1)) {
+  f=document.pad;
+  f.elements[4*by+bx].value=f.elements[4*y+x].value;
+  f.elements[4*y+x].value="   ";
+  bx=x; by=y; f.msg.value++;
+     }
+  }
+  function rndize() {
+  alpha="ABCDEFGHIJKLMNO ";
+  for (i=0;i<16;i++) {
+  x=0;
+  y=0;
+  while (document.pad.elements[4*y+x].value!="   ") {
+  x=Math.floor(Math.random()*4);
+  y=Math.floor(Math.random()*4);
+  }
+  document.pad.elements[4*y+x].value=alpha.substring(i,i+1);
+  }
+  bx=x;
+  by=y;
+  }
+  rndize();
+  // End -->
+  </script>
+
+  <tr>
+  <td colspan=4><input type=text size=20 name=msg></td>
+  </tr>
+  </table>
+  </form>
+  </center>
+</body>
+</html>
