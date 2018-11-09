@@ -1,68 +1,77 @@
 <!doctype html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<!---- CSS ----------------------------------->
-	<link href="css/mainStyle.css" rel="stylesheet" type="text/css"/>
-	
-	<!---- JQuery UI ----------------------------------->
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
-	
-	<!-----AJAX------------------------------------------>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	
-<title>Norie's Rubric 6 Site</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic'
+	rel='stylesheet' type='text/css' />
+
+<title>GAMEs by JavaScript<title>
+
 </head>
 
-<body>
-	<div id="container">
-		
-		<header class="header">
-			<h1>Rubric 6 </h1>
-			
-			<div id="contrastMode">1</div>
-		</header>
-		
-		
-	<div id="content">
-		<div id="rightSide">
-		<button id="btn" class="btn">Click! Click! Click!</button>
-		<section id="doc1">
-			<h2 id="title" class="title">Click the objects to see what happens</h2>
-			<div id="" class="icons">2</div>
-			<p id="p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo pharetra sem, vitae elementum eros tristique quis. Donec porta, sapien a pellentesque consectetur, sapien nunc elementum leo, in semper quam orci ut neque. Aenean quis lectus ultricies, hendrerit arcu at, faucibus erat. Nam eget sodales libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus malesuada arcu scelerisque mi facilisis feugiat. Mauris semper velit et nunc pulvinar varius. In vel bibendum metus. Sed ac tellus libero. Suspendisse vitae tortor eget libero tempus tincidunt a sit amet justo. Aenean feugiat et sapien sed rhoncus. Suspendisse ut tortor a quam rutrum eleifend. Proin viverra, enim ac sodales venenatis, nisi lorem placerat enim, at malesuada nulla felis dictum mi. <br>
-			  <br>
-		  </p>
-		</section>
-		<section id="doc2">
-			
-		  <div id="one">3</div>
-			
-		</section>
-		<section id="doc3">
-			<div id="two">4</div>
-		</section>
-		<section id="doc4">
-			<div id="three">5</div>
-		</section>
-		</div>
-		
-		<footer id="bottom">
-			<input type="button" value="6" id="button" class="button"/>
-			<div id="loadPage"></div>
-		</footer>
-		</div>
-	</div>
-	
-	
-	
-	<!---- JavaScript: my functions ----------------------------------->
-	<script src="js/mainScript.js" type="text/javascript">
-</script>
-	
-	<script src="js/ajax.js" type="text/javascript"></script>
-	
+<body >
+  <center>
+  <form name=pad>
+  <table border=2 cellpadding=2 cellspacing=2>
+  <tr>
+  <td colspan=4 align=center>Shift It 4x4 Game</td>
+  </tr>
+
+  <SCRIPT LANGUAGE="JavaScript">
+
+  <!-- Original:  Dion  -->
+  <!-- Web Site:  http://members.xoom.com/yoboseyo -->
+
+
+
+  <!-- Begin
+  bx=3; by=3;
+  for (y=0;y<4;y++) {
+  document.write('<tr>');
+  for (x=0;x<4;x++) {
+  document.write('<td><tt><input type=button value="   " ');
+  document.write('onclick="move('+x+','+y+');"></tt></td>');
+  }
+  document.write('</tr>');
+  }
+  function move(x,y) {
+  ax=Math.abs(bx-x);
+  ay=Math.abs(by-y);
+  if (((ax*ay)==0)&&((ax+ay)==1)) {
+  f=document.pad;
+  f.elements[4*by+bx].value=f.elements[4*y+x].value;
+  f.elements[4*y+x].value="   ";
+  bx=x; by=y; f.msg.value++;
+     }
+  }
+  function rndize() {
+  alpha="ABCDEFGHIJKLMNO ";
+  for (i=0;i<16;i++) {
+  x=0;
+  y=0;
+  while (document.pad.elements[4*y+x].value!="   ") {
+  x=Math.floor(Math.random()*4);
+  y=Math.floor(Math.random()*4);
+  }
+  document.pad.elements[4*y+x].value=alpha.substring(i,i+1);
+  }
+  bx=x;
+  by=y;
+  }
+  rndize();
+  // End -->
+  </script>
+
+  <tr>
+  <td colspan=4><input type=text size=20 name=msg></td>
+  </tr>
+  </table>
+  </form>
+  </center>
 </body>
 </html>
